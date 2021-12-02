@@ -1,29 +1,31 @@
 package com.company;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 public class DayOne {
-    ReadFile RF = new ReadFile();
-    int[] entries = new int[2000];
+    ReadFile RF = new ReadFile("DayOne");
+    //int[] entries = new int[2000];
+    ArrayList<Integer> entries = new ArrayList<>();
     public DayOne() throws FileNotFoundException {
 
     }
     public int TaskOne(){
-        RF.ReadList(entries);
+        RF.ReadInt(entries);
         int increased = 0;
-        for(int i = 1; i<entries.length; i++){
-            if(entries[i]>entries[i-1]){
+        for(int i = 1; i<entries.size(); i++){
+            if(entries.get(i) > entries.get(i - 1)){
                 increased++;
             }
         }
         return increased;
     }
     public int TaskTwo(){
-        RF.ReadList(entries);
+        RF.ReadInt(entries);
         int increased = 0;
-        for(int i = 1; i<entries.length-2; i++){
-            int a = entries[i-1]+entries[i]+entries[i+1];
-            int b = entries[i]+entries[i+1]+entries[i+2];
+        for(int i = 1; i<entries.size()-2; i++){
+            int a = entries.get(i - 1) + entries.get(i) + entries.get(i + 1);
+            int b = entries.get(i) + entries.get(i + 1) + entries.get(i + 2);
             if(a<b){
                 increased++;
             }

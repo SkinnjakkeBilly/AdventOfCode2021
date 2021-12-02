@@ -1,17 +1,17 @@
 package com.company;
 
-
+import java.util.ArrayList;
 import java.io.FileNotFoundException;
 
 public class DayTwo {
-    ReadFile RF = new ReadFile();
-    String[] entries = new String[1000];
-
+    ReadFile RF = new ReadFile("DayTwo");
+    //String[] entries = new String[1000];
+    ArrayList<String> entries = new ArrayList<>();
     public DayTwo() throws FileNotFoundException {
 
     }
     public int TaskOne(){
-        RF.ReadList(entries);
+        RF.ReadString(entries);
         int hor = 0;
         int depth = 0;
         for(String entry: entries){
@@ -31,7 +31,7 @@ public class DayTwo {
     }
 
     public int TaskTwo(){
-        RF.ReadList(entries);
+        RF.ReadString(entries);
         int aim = 0;
         int hor = 0;
         int depth = 0;
