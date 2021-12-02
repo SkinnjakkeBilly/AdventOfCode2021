@@ -21,21 +21,14 @@ public class ReadFile {
     }
 
     public ArrayList<String> ReadString(ArrayList<String> entries){
-        int i = 0;
         while(in.hasNext()){
-            //System.out.println(in.nextLine());
             entries.add(in.nextLine());
-
-            i++;
         }
         return entries;
     }
     public ArrayList<Integer> ReadInt(ArrayList<Integer> entries){
-        int i = 0;
         while(in.hasNext()){
-            //System.out.println(in.nextLine());
             entries.add(Integer.parseInt(in.nextLine()));
-            i++;
         }
         return entries;
     }
