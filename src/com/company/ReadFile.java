@@ -10,13 +10,12 @@ public class ReadFile {
      * - Gjør slik at entries[] leser lengde ut fra fil-lengde, og ikke trenger å hardkodes.
      * */
 
-     String filePath = "";
-
-   Scanner in;
+    String filePath = "";
+    Scanner in;
 
     public ReadFile(String fileName) throws FileNotFoundException {
-        filePath = "//Users//bendikbreidablikk//Projects//AdventOfCode2021//Input//"+fileName+".txt";
-        //static String filePath = "C:\\Kildekode\\AdventOfCode2021\\Input\\"+fileName+".txt";
+        //filePath = "//Users//bendikbreidablikk//Projects//AdventOfCode2021//Input//"+fileName+".txt";
+        filePath = "C:\\Kildekode\\AdventOfCode2021\\Input\\"+fileName+".txt";
         in = new Scanner(new File(filePath));
     }
 
