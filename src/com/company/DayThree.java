@@ -20,14 +20,14 @@ public class DayThree {
     public DayThree() throws FileNotFoundException {
     }
 
-    public String TaskOne(){
+    public String taskOne(){
         RF.ReadString(entries);
         BitInfo bitInfo = new BitInfo();
         bitInfo.compute(entries);
         return "" + bitInfo.gamma * bitInfo.epsilon;
     }
 
-    public String TaskTwo(){
+    public String taskTwo(){
         RF.ReadString(entries);
         List<String> filteredGammaInput = new ArrayList<>(entries);
         List<String> filteredEpsilonInput = new ArrayList<>(entries);

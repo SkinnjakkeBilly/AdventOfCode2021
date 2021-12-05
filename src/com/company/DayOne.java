@@ -10,7 +10,7 @@ public class DayOne {
     public DayOne() throws FileNotFoundException {
 
     }
-    public int TaskOne(){
+    public int taskOne(){
         RF.ReadInt(entries);
         int increased = 0;
         for(int i = 1; i<entries.size(); i++){
@@ -20,7 +20,7 @@ public class DayOne {
         }
         return increased;
     }
-    public int TaskTwo(){
+    public int taskTwo(){
         RF.ReadInt(entries);
         int increased = 0;
         for(int i = 1; i<entries.size()-2; i++){

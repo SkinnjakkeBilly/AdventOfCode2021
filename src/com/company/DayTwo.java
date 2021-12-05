@@ -10,7 +10,7 @@ public class DayTwo {
     public DayTwo() throws FileNotFoundException {
 
     }
-    public int TaskOne(){
+    public int taskOne(){
         RF.ReadString(entries);
         int hor = 0;
         int depth = 0;
@@ -30,7 +30,7 @@ public class DayTwo {
         return hor*depth;
     }
 
-    public int TaskTwo(){
+    public int taskTwo(){
         RF.ReadString(entries);
         int aim = 0;
         int hor = 0;
