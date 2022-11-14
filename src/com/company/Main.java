@@ -1,7 +1,5 @@
 package com.company;
 
-import java.io.FileNotFoundException;
-
 public class Main {
 
     public static void main(String[] args) throws Exception {
@@ -11,6 +9,7 @@ public class Main {
         DayThree dayThree = new DayThree();
         DayFour dayFour = new DayFour();
         DayFive dayFive = new DayFive();
+        DaySix daySix = new DaySix();
         System.out.println("Day one. Task one: " + dayOne.taskOne());
         System.out.println("Day one. Task two: " + dayOne.taskTwo());
         System.out.println();
@@ -25,6 +24,9 @@ public class Main {
         System.out.println();
         System.out.println("Day Five Task One: " + dayFive.taskOne());
         System.out.println("Day Five Task Two: " + dayFive.taskTwo());
+        System.out.println();
+        System.out.println("Day Six Task One: " + daySix.bothTasks());
+
 
     }
 }
