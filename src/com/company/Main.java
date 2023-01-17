@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-
+        //Bruker args til å slippe å bytte mellom filsti for mac og windows
         DayOne dayOne = new DayOne(args[0]);
         System.out.println("Day one. Task one: " + dayOne.taskOne());
         DayTwo dayTwo = new DayTwo(args[0]);
