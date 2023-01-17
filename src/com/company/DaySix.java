@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class DaySix {
-    ReadFile RF = new ReadFile("DaySix");
+    ReadFile RF;
     ArrayList<String> entries = new ArrayList<>();
     String[] nums;
     ArrayList<Integer> ints = new ArrayList<>();
@@ -14,7 +14,8 @@ public class DaySix {
 
     //HashMap<Integer, Integer> fish = new HashMap<>();
 
-    public DaySix() throws FileNotFoundException {
+    public DaySix(String filePath) throws FileNotFoundException {
+        RF = new ReadFile(filePath,"DaySix");
         RF.ReadString(entries);
         Iterator<String> it = entries.iterator();
         nums = it.next().split(",");

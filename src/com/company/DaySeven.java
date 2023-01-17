@@ -6,11 +6,12 @@ import java.util.Iterator;
 
 public class DaySeven {
 
-        ReadFile RF = new ReadFile("DaySeven");
+        ReadFile RF ;
         ArrayList<String> entries = new ArrayList<>();
         String[] nums;
 
-        public DaySeven() throws FileNotFoundException {
+        public DaySeven(String filePath) throws FileNotFoundException {
+            RF = new ReadFile(filePath,"DaySeven");
             RF.ReadString(entries);
             Iterator<String> it = entries.iterator();
             nums = it.next().split(",");
@@ -41,8 +42,10 @@ public class DaySeven {
              int crab = Integer.parseInt(nums[i]);
              totCost += Math.abs(crab-median);
             }
-
-
             return totCost;
+        }
+
+        public int taskTwo(){
+            return 0;
         }
     }

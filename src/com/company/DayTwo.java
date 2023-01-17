@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.io.FileNotFoundException;
 
 public class DayTwo {
-    ReadFile RF = new ReadFile("DayTwo");
+    ReadFile RF;
     //String[] entries = new String[1000];
     ArrayList<String> entries = new ArrayList<>();
-    public DayTwo() throws FileNotFoundException {
-
-    }
+    public DayTwo(String filePath) throws FileNotFoundException {
+        RF = new ReadFile(filePath,"DayTwo");
+ }
     public int taskOne(){
         RF.ReadString(entries);
         int hor = 0;

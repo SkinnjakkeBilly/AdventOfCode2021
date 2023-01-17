@@ -6,11 +6,12 @@ import java.util.Arrays;
 import java.util.Vector;
 
 public class DayFive {
-    ReadFile RF = new ReadFile("DayFive");
+    ReadFile RF;
     ArrayList<String> entries = new ArrayList<>();
 
 
-    public DayFive() throws FileNotFoundException {
+    public DayFive(String filePath) throws FileNotFoundException {
+        RF = new ReadFile(filePath,"DayFive");
         RF.ReadString(entries);
     }
 

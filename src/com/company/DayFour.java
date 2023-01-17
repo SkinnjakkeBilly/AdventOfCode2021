@@ -8,14 +8,15 @@ import java.util.regex.Pattern;
  * Stjelt fra redditbruker u/anothergopher
  */
 public class DayFour {
-    ReadFile RF = new ReadFile("DayFour");
+    ReadFile RF;
     ArrayList<String> entries = new ArrayList<>();
     String[] nums;
     Pattern rowBingo = Pattern.compile("(00\\s*){5}\\n");
     Pattern colBingo = Pattern.compile("(\\b00(\\s+\\d+){4}\\s+){4}00");
     List<String> boards = new LinkedList<>();
 
-    public DayFour() throws FileNotFoundException {
+    public DayFour(String filePath) throws FileNotFoundException {
+        RF = new ReadFile(filePath, "DayFour");
 
         RF.ReadString(entries);
         Iterator<String> it = entries.iterator();

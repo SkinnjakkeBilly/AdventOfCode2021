@@ -6,16 +6,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ReadFile {
-    /**TODO:
-     * - Gjør slik at entries[] leser lengde ut fra fil-lengde, og ikke trenger å hardkodes.
-     * */
 
     String filePath = "";
     Scanner in;
 
-    public ReadFile(String fileName) throws FileNotFoundException {
-        //filePath = "//Users//bendikbreidablikk//Projects//AdventOfCode2021//Input//"+fileName+".txt";
-        filePath = "C:\\Kildekode\\AdventOfCode2021\\Input\\"+fileName+".txt";
+    public ReadFile(String filePath, String fileName) throws FileNotFoundException {
+
+        filePath = filePath+fileName+".txt";
+        //filePath = "C:\\Kildekode\\AdventOfCode2021\\Input\\"+fileName+".txt";
         in = new Scanner(new File(filePath), "UTF-8");
     }
 

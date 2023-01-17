@@ -13,11 +13,12 @@ import java.util.stream.Collectors;
  */
 
 public class DayThree {
-    ReadFile RF = new ReadFile("DayThree");
+    ReadFile RF;
 
     ArrayList<String> entries = new ArrayList<>();
 
-    public DayThree() throws FileNotFoundException {
+    public DayThree(String filePath) throws FileNotFoundException {
+        RF = new ReadFile(filePath,"DayThree");
     }
 
     public String taskOne(){
