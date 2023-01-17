@@ -16,18 +16,33 @@ public class DaySeven {
             nums = it.next().split(",");
         }
 
-        public String taskOne(){
+        public int taskOne() {
             String tmp = "0";
+
             for (int i = 0; i < nums.length; i++) {
-                for (int j = i+1; j < nums.length; j++) {
-                    if(Integer.parseInt(nums[i])>Integer.parseInt(nums[j])){
+                for (int j = i + 1; j < nums.length; j++) {
+                    if (Integer.parseInt(nums[i]) > Integer.parseInt(nums[j])) {
                         tmp = nums[i];
                         nums[i] = nums[j];
                         nums[j] = tmp;
                     }
                 }
             }
-            return nums[nums.length/2];
-        }
+            int median = 0;
+            if(nums.length%2!=0){
+                median = nums.length/2;
 
+            }else{
+                median = ((Integer.parseInt(nums[(nums.length-1)/2])) + (Integer.parseInt(nums[(nums.length+1)/2]))) / 2;
+            }
+
+            int totCost = 0;
+            for (int i = 0; i < nums.length; i++) {
+             int crab = Integer.parseInt(nums[i]);
+             totCost += Math.abs(crab-median);
+            }
+
+
+            return totCost;
+        }
     }
