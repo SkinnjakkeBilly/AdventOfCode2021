@@ -5,13 +5,13 @@ public class Main {
     public static void main(String[] args) throws Exception {
         //Bruker args til å slippe å bytte mellom filsti for mac og windows
         DayOne dayOne = new DayOne(args[0]);
-        System.out.println("Day one. Task one: " + dayOne.taskOne());
         DayTwo dayTwo = new DayTwo(args[0]);
         DayThree dayThree = new DayThree(args[0]);
         DayFour dayFour = new DayFour(args[0]);
         DayFive dayFive = new DayFive(args[0]);
         DaySix daySix = new DaySix(args[0]);
         DaySeven daySeven = new DaySeven(args[0]);
+        DayEight dayEight = new DayEight(args[0]);
         System.out.println("Day one. Task one: " + dayOne.taskOne());
         System.out.println("Day one. Task two: " + dayOne.taskTwo());
         System.out.println();
@@ -31,6 +31,9 @@ public class Main {
         System.out.println();
         System.out.println("Day Seven Task One: " + daySeven.taskOne());
         System.out.println("Day Seven Task Two: " + daySeven.taskTwo());
+        System.out.println();
+        System.out.println("Day Eight Task One: " + dayEight.taskOne());
+        System.out.println("Day Eight Task Two: " + dayEight.taskTwo());
 
 
     }

@@ -7,13 +7,13 @@ import java.util.Iterator;
 public class DayEight {
     ReadFile RF;
     ArrayList<String> entries = new ArrayList<>();
-    String[] inputLines;
+    String[] numDef;
+    String[] display;
 
     public DayEight(String filePath) throws FileNotFoundException {
-        RF = new ReadFile(filePath, "DayEight");
+        RF = new ReadFile(filePath, "DayEightEx");
         RF.ReadString(entries);
-        Iterator<String> it = entries.iterator();
-        inputLines = it.next().split("|");
+        splitLines();
 
     }
 
@@ -21,5 +21,17 @@ public class DayEight {
 
 
         return 0;
+    }
+
+    private void splitLines() {
+        for(int i = 0; i<entries.size(); i++){
+            numDef[i] = entries.get(0).substring(0, 58);
+            display[i] = entries.get(0).substring(61);
+
+        }
+    }
+
+    public String taskTwo() {
+        return  "";
     }
 }
