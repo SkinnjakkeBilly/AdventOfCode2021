@@ -12,28 +12,29 @@ public class Main {
         DaySix daySix = new DaySix(args[0]);
         DaySeven daySeven = new DaySeven(args[0]);
         DayEight dayEight = new DayEight(args[0]);
-        System.out.println("Day one. Task one: " + dayOne.taskOne());
-        System.out.println("Day one. Task two: " + dayOne.taskTwo());
+        System.out.println("Day one, task one: " + dayOne.taskOne());
+        System.out.println("Day one, task two: " + dayOne.taskTwo());
         System.out.println();
-        System.out.println("Day two. Task one: " + dayTwo.taskOne());
-        System.out.println("Day Two. Task Two: " + dayTwo.taskTwo());
+        System.out.println("Day two, task one: " + dayTwo.taskOne());
+        System.out.println("Day two, task Two: " + dayTwo.taskTwo());
         System.out.println();
-        System.out.println("Day Three Task One: " + dayThree.taskOne());
-        System.out.println("Day Three Task Two: " + dayThree.taskTwo());
+        System.out.println("Day three, task One: " + dayThree.taskOne());
+        System.out.println("Day three, task Two: " + dayThree.taskTwo());
         System.out.println();
-        System.out.println("Day Four Task One: " + dayFour.taskOne());
-        System.out.println("Day Four Task Two: " + dayFour.taskTwo());
+        System.out.println("Day four, task One: " + dayFour.taskOne());
+        System.out.println("Day four, task Two: " + dayFour.taskTwo());
         System.out.println();
-        System.out.println("Day Five Task One: " + dayFive.taskOne());
-        System.out.println("Day Five Task Two: " + dayFive.taskTwo());
+        System.out.println("Day five, task One: " + dayFive.taskOne());
+        System.out.println("Day five, task Two: " + dayFive.taskTwo());
         System.out.println();
-        System.out.println("Day Six Both: " + daySix.bothTasks());
+        //Day six task one skrives fra DaySix.java
+        System.out.println("Day six, task Two: " + daySix.bothTasks());
         System.out.println();
-        System.out.println("Day Seven Task One: " + daySeven.taskOne());
-        System.out.println("Day Seven Task Two: " + daySeven.taskTwo());
+        System.out.println("Day seven, task One: " + daySeven.taskOne());
+        System.out.println("Day seven, task Two: " + daySeven.taskTwo());
         System.out.println();
-        System.out.println("Day Eight Task One: " + dayEight.taskOne());
-        System.out.println("Day Eight Task Two: " + dayEight.taskTwo());
+        System.out.println("Day eight, task One: " + dayEight.taskOne());
+        System.out.println("Day eight, task Two: " + dayEight.taskTwo());
 
 
     }

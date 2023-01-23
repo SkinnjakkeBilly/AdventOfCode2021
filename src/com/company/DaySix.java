@@ -44,7 +44,7 @@ public class DaySix {
             gens[8] = parents;
             if (day == 80) {
                 long total1 = Arrays.stream(gens).sum();
-                System.out.println("Part 1: " + total1);
+                System.out.println("Day six, Task One: " + total1);
             }
         }
         long total2 = Arrays.stream(gens).sum();

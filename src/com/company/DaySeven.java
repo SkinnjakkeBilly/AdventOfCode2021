@@ -13,7 +13,7 @@ public class DaySeven {
     int snitt;
 
     public DaySeven(String filePath) throws FileNotFoundException {
-        RF = new ReadFile(filePath, "DaySevenEx");
+        RF = new ReadFile(filePath, "DaySeven");
         RF.ReadString(entries);
         Iterator<String> it = entries.iterator();
         nums = it.next().split(",");
